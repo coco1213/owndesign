@@ -1,0 +1,15 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525" Loaded="Window_Loaded">
+    <Grid>
+        <StackPanel >
+        <Button Height="50" Width="150" x:Name="timerbtn" Content="開始倒數" Click="timerbtn_Click"/>
+        <TextBlock Height="100" x:Name="timertext" FontSize="90"></TextBlock>
+            <Grid >
+                <Button Height="50" Width="150" x:Name="timerbtn1" Content="暫停" Click="timerbtn1_Click" Margin="10,35,357,-35"/>
+                <Button Height="50" Width="150" x:Name="timerbtn2" Content="繼續" Click="timerbtn2_Click" Margin="357,35,10,-35"/>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>
